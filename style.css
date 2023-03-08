@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#222;
+}
+
+.container{
+    height:3px;
+    width:300px;
+    background-color:white;
+    animation-name:animation;
+    animation-duration:3s;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+    animation-direction:alternate;
+}
+
+@keyframes animation{
+    0%{
+        transform:scaleX(0);
+        transform-origin: left;
+    }
+
+    48%{
+        transform:scaleX(1);
+        transform-origin:left
+    }
+
+    52%{
+        transform:scaleX(1);
+        transform-origin:right;
+    }
+
+    100%{
+        transform:scaleX(0);
+        transform-origin:right;
+    }
+
+    
+
+}
